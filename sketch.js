@@ -23,8 +23,9 @@ function draw(){
 	var y = r * sin(a) + height/2;
 	noStroke();
 	fill(random(150, 200), 150, random(150,250));
-	ellipse(x,y,7,7);
-
+	if(x <= displayWidth || y <= displayHeight){
+	   ellipse(x,y,7,7);
+	}
 
 	n++;
 }
