@@ -6,7 +6,7 @@ var color;
 
 function setup(){
 	createCanvas(windowWidth,windowHeight)
-	background(0);
+	background(255);
 	angle = random(130, 137.5);
 	colorMode(HSB);
 }
