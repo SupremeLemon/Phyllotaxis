@@ -28,3 +28,21 @@ function draw(){
 
 	n++;
 }
+
+
+
+function windowResized() {
+  waitress = millis() + 2000;
+  if (fullscreen()) {
+    resizeCanvas(displayWidth, displayHeight);
+    viewfs.style.display = "none";
+    exitfs.style.display = "block";
+  } else {
+    resizeCanvas(windowWidth,windowHeight);
+    exitfs.style.display = "none";
+    viewfs.style.display = "block";
+  }
+  cursor();  
+  showing = true;
+  background(0);
+}
