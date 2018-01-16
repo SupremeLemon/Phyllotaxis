@@ -5,7 +5,7 @@ var milestone = 200;
 var color;
 
 function setup(){
-	createCanvas(displayWidth, displayHeight)
+	createCanvas(windowWidth,windowHeight)
 	background(0);
 	angle = random(130, 137.5);
 	colorMode(HSB);
